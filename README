@@ -1,1 +1,5 @@
 Some css to get some buttons that looks good cross browser.
+
+I use a reset.css from http://meyerweb.com/eric/tools/css/reset/
+
+The layout.css is just some css for everything but the buttons on index.html
