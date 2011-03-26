@@ -1,0 +1,16 @@
+body {
+    font: 13px/1.4 'helvetica neue', arial, sans-serif;
+    padding: 1em;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 200%;
+    margin: 1em 0 .5em;
+    color: #aaa;
+}
+
+code {
+    font-family: monospace;
+    margin-left: 10px;
+}

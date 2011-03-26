@@ -1,0 +1,41 @@
+/* This is written with Webkit as the main engine, and every deviation from that by other browsers are treated as hacks */
+button, input[type="submit"], a.button {
+    font: 13px/18px 'helvetica neue', arial, sans-serif;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background: #eee;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ddd));
+    background-image: -moz-linear-gradient(0% 100% 90deg,#ddd,  #fff);
+    /* ie7 + ie8 gradient bg. Only works on the buttons */
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ffffff', EndColorStr='#dddddd', GradientType=0);
+    border: 1px solid #ccc;
+    border-bottom-color: #aaa;
+    border-radius: 3px;
+    padding: 1px 5px 0;
+    margin: 0;
+    /* ie7 hacking */
+    *width:auto;
+    *overflow:visible;
+    *padding:2px 5px 0;
+    *line-height:1;
+}
+
+a.button {
+    padding: 2px 5px;
+    *padding: 2px 6px;
+}
+
+/* FF Hack */
+body:-moz-last-node button,
+body:-moz-last-node input[type="submit"] {
+    padding:0px 2px 1px;
+} 
+
+button:active, input[type="submit"]:active, a.button:active {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+    background-image: -moz-linear-gradient(0% 100% 90deg,#e6e6e6, #fff);
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ffffff', EndColorStr='#e6e6e6', GradientType=0);
+    border-bottom-color: #ccc;
+}
+
